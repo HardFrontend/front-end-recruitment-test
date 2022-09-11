@@ -1,0 +1,38 @@
+
+.submit {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: @white;
+  letter-spacing: 0.0125em;
+  text-transform: uppercase;
+  background-color: @green;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  padding: 16px;
+  transition: background-color .4s ease-in-out;
+  width: 100%;
+  margin: 32px 0 0;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: @green-dark;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: @green;
+    }
+  }
+
+  &__icon {
+    margin: 0 10px 0 0;
+  }
+}

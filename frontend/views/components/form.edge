@@ -1,0 +1,144 @@
+<div class="container">
+  <form class="row form" method="get" id="form">
+    <div class="form__left-col col col-lg-8 d-flex flex-column">
+      <div class="title-wrapper mt-0">
+        <span class="title-wrapper__number">1</span>
+        <h2 class="title-wrapper__title">
+          Personal information
+        </h2>
+      </div>
+
+      <div class="form__inner">
+        <div class="row">
+          <div class="col col-md-6">
+            <div class="input-wrapper">
+              <label class="input-wrapper__label" for="name">First name</label>
+              <input class="input-wrapper__input" type="text" id="name" name="name" placeholder="Anastasia" pattern="[A-Za-z]+" minlength="2" maxlength="50" required>
+            </div>
+          </div>
+          <div class="col col-md-6">
+            <div class="input-wrapper">
+              <label class="input-wrapper__label" for="lname">Last name</label>
+              <input class="input-wrapper__input" type="text" id="lname" name="lname" placeholder="Smith" pattern="[A-Za-z]+" minlength="2" maxlength="50" required>
+            </div>
+          </div>
+        </div>
+
+        <div class="input-wrapper">
+          <label class="input-wrapper__label" for="email">Email</label>
+          <input class="input-wrapper__input" type="email" id="email" name="email" placeholder="email@mail.com" pattern="[A-Za-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" minlength="5" required>
+        </div>
+
+        <div class="row">
+          <div class="col col-md-6">
+            <div class="input-wrapper input-wrapper--select">
+              <label class="input-wrapper__label" for="country">Country</label>
+              <select id="country" name="country" class="input-wrapper__input input-wrapper__select">
+                <option>UK</option>
+                <option selected>US</option>
+                <option>Germany</option>
+              </select>
+            </div>
+          </div>
+          <div class="col col-md-6">
+            <div class="input-wrapper">
+              <label class="input-wrapper__label" for="postalcode">Postal code</label>
+              <input class="input-wrapper__input" type="text" id="postalcode" name="postalcode" placeholder="10001" pattern="[0-9]+" minlength="5" maxlength="5" required>
+            </div>
+          </div>
+        </div>
+
+        <div class="input-wrapper">
+          <label class="input-wrapper__label" for="phone">Phone number</label>
+          <input class="input-wrapper__input" type="text" id="phone" name="phone" placeholder="(123) 456-67-89" pattern="[0-9]+" minlength="9" maxlength="9" required>
+        </div>
+      </div>
+
+      <div class="title-wrapper">
+        <span class="title-wrapper__number">2</span>
+        <h2 class="title-wrapper__title title">
+          Payment details
+        </h2>
+        <svg class="title-wrapper__icon-title" width="18" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M9 1.818c-.955 0-1.87.383-2.546 1.065A3.655 3.655 0 0 0 5.4 5.455v2.727h7.2V5.455c0-.965-.38-1.89-1.054-2.572A3.582 3.582 0 0 0 9 1.818Zm5.4 6.364V5.455a5.483 5.483 0 0 0-1.582-3.857A5.373 5.373 0 0 0 9 0a5.373 5.373 0 0 0-3.818 1.598A5.483 5.483 0 0 0 3.6 5.455v2.727h-.9c-1.491 0-2.7 1.22-2.7 2.727v6.364C0 18.779 1.209 20 2.7 20h12.6c1.491 0 2.7-1.221 2.7-2.727v-6.364c0-1.506-1.209-2.727-2.7-2.727h-.9ZM2.7 10c-.497 0-.9.407-.9.91v6.363c0 .502.403.909.9.909h12.6c.497 0 .9-.407.9-.91V10.91a.905.905 0 0 0-.9-.909H2.7Z" fill="#000000"/>
+        </svg>
+      </div>
+
+      <div class="form__inner form__inner--with-border d-flex flex-column">
+        <div class="input-wrapper">
+          <svg class="input-wrapper__icon" width="24" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M24 1.822C24 .604 23.4 0 22.239 0H1.76C1.181 0 .753.163.472.499.154.834 0 1.266 0 1.822v12.355c0 .556.154.978.472 1.324.326.335.744.498 1.29.498h20.477c1.162 0 1.76-.613 1.76-1.822V1.822ZM22.239.288c.962 0 1.452.518 1.452 1.534v12.355c0 1.026-.49 1.535-1.452 1.535H1.76c-.463 0-.817-.144-1.08-.432-.272-.278-.409-.662-.409-1.103V1.822C.272.806.753.288 1.762.288h20.477Z" fill="#315881"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.924.998c-.39 0-.635.067-.771.211-.118.163-.173.432-.173.825V4.71h22.04V2.034c0-.7-.327-1.036-.98-1.036H1.923Z" fill="#315881"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M.98 13.928c0 .71.318 1.074.944 1.074H22.04c.654 0 .98-.365.98-1.074v-2.676H.98v2.676Z" fill="#DFA43B"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.278 5.852c0 .125-.018.22-.063.288L6.626 9.066l-.1-3.569H3.984l.854.432c.245.163.372.374.372.643l.236 3.789H6.69l2.977-4.864H8.142c.09.087.136.221.136.355Zm10.276-.21.1-.145H17.1c.054.058.073.087.073.106-.019.076-.055.124-.073.182l-2.26 4.355a3.71 3.71 0 0 1-.172.22h1.28l-.064-.143c0-.125.063-.355.2-.681l.272-.537h1.316c.055.45.09.825.109 1.103l-.11.259h1.59l-.237-.365-.471-4.355Zm-.945 2.675h-.944l.808-1.64.136 1.64Zm-3.92-3.069c-.49 0-.909.144-1.28.432-.41.25-.609.566-.609.959 0 .45.145.844.435 1.142l.88.642c.318.24.473.45.473.643a.596.596 0 0 1-.236.47.816.816 0 0 1-.545.183c-.318 0-.862-.24-1.616-.681v.892c.59.374 1.162.566 1.716.566.526 0 .971-.154 1.352-.5.409-.316.609-.69.609-1.102 0-.346-.146-.662-.473-.998l-.844-.643c-.281-.24-.435-.45-.435-.614 0-.374.209-.566.635-.566.29 0 .717.173 1.29.538l.172-.93a2.9 2.9 0 0 0-1.525-.432Zm-3.378 5.113c-.018-.202-.054-.384-.072-.576l1.153-3.933.272-.355h-1.662c.019.086.037.202.055.288 0 .086 0 .192-.018.288L8.886 9.967l-.236.394h1.661Z" fill="#315881"/>
+          </svg>
+          <label class="input-wrapper__label" for="creditcard">Creditcard</label>
+          <input class="input-wrapper__input" type="text" id="creditcard" name="creditcard" placeholder="000-0-00-0000-0000" pattern="[0-9]+" minlength="16" maxlength="16" required autocomplete="off">
+        </div>
+
+        <div class="row">
+          <div class="col col-md-6">
+            <div class="input-wrapper">
+              <div class="input-wrapper__icon input-wrapper__tooltip">
+                <span class="input-wrapper__tooltip-text">Inter security code</span>
+                <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10 0C4.48 0 0 4.48 0 10s4.48 10 10 10 10-4.48 10-10S15.52 0 10 0Zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8Zm-1-4h2v2H9v-2Zm1.61-9.96c-2.06-.3-3.88.97-4.43 2.79C6 7.41 6.44 8 7.05 8h.2c.41 0 .74-.29.88-.67.32-.89 1.27-1.5 2.3-1.28.95.2 1.65 1.13 1.57 2.1-.1 1.34-1.62 1.63-2.45 2.88 0 .01-.01.01-.01.02-.01.02-.02.03-.03.05-.09.15-.18.32-.25.5-.01.03-.03.05-.04.08-.01.02-.01.04-.02.07-.12.34-.2.75-.2 1.25h2c0-.42.11-.77.28-1.07.02-.03.03-.06.05-.09.08-.14.18-.27.28-.39.01-.01.02-.03.03-.04.1-.12.21-.23.33-.34.96-.91 2.26-1.65 1.99-3.56-.24-1.74-1.61-3.21-3.35-3.47Z" fill="#6C7689"/>
+                </svg>
+              </div>
+              <label class="input-wrapper__label" for="phone">cvv</label>
+              <input class="input-wrapper__input" type="text" id="cvv" name="cvv" placeholder="***" pattern="[0-9]+" minlength="3" maxlength="3" required autocomplete="off">
+            </div>
+          </div>
+
+          <div class="col col-md-6">
+            <div class="input-wrapper">
+              <label class="input-wrapper__label" for="expiration-date">Expiration Date</label>
+              <input class="input-wrapper__input input-wrapper__input--card" type="text" id="expiration-date" name="expiration-date" pattern="[0-9]{2}/[0-9]{2}" minlength="5" maxlength="5" placeholder="MM / YY" required autocomplete="off">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form__col-right col col-lg-4">
+      <div class="order">
+        <h3 class="order__title">Your order</h3>
+        <p class="d-flex align-items-center justify-content-between">
+          <span>Apple Watch Sport</span>
+          <span class="order__amount">$ 580</span>
+        </p>
+        <p class="d-flex align-items-center justify-content-between">
+          <span>Total Modern Buckle</span>
+          <span class="order__amount">$ 380</span>
+        </p>
+        <hr>
+        <p class="d-flex align-items-center justify-content-between">
+          <span>Total purchases</span>
+          <span class="order__amount">$ 960.00</span>
+        </p>
+        <p class="d-flex align-items-center justify-content-between">
+          <span>Estimated tax</span>
+          <span class="order__amount">$ 0</span>
+        </p>
+        <hr>
+        <p class="d-flex align-items-center justify-content-between">
+          <span>Total</span>
+          <span class="order__amount order__amount--total">$ 960.00</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="col col-lg-8 d-flex flex-column">
+      <div class="form__inner">
+        <button class="submit d-flex align-items-center justify-content-center" type="submit" id="form-submit">
+          <svg class="submit__icon" width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 .826A.83.83 0 0 1 .833 0h3.334c.397 0 .739.278.817.664l.7 3.466h13.483c.248 0 .483.11.642.3a.82.82 0 0 1 .176.681l-1.334 6.937a2.475 2.475 0 0 1-.885 1.448 2.515 2.515 0 0 1-1.606.547H8.074a2.514 2.514 0 0 1-1.607-.547 2.475 2.475 0 0 1-.884-1.447L4.19 5.154a.813.813 0 0 1-.014-.07l-.693-3.432H.834A.83.83 0 0 1 0 .826Zm6.017 4.957 1.2 5.943c.038.19.143.361.295.483a.838.838 0 0 0 .539.183h8.132a.838.838 0 0 0 .538-.183.825.825 0 0 0 .294-.48l1.144-5.946H6.017Zm-.184 11.565A1.66 1.66 0 0 1 7.5 15.696c.92 0 1.667.74 1.667 1.652A1.66 1.66 0 0 1 7.5 19a1.66 1.66 0 0 1-1.667-1.652Zm9.167 0a1.66 1.66 0 0 1 1.667-1.652c.92 0 1.666.74 1.666 1.652A1.66 1.66 0 0 1 16.667 19 1.66 1.66 0 0 1 15 17.348Z" fill="#FFFFFF"/>
+          </svg>
+          Complete purchase
+        </button>
+        <p class="error-text hidden">Please check your the entered data.</p>
+      </div>
+    </div>
+
+  </form>
+</div>

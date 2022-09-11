@@ -1,0 +1,19 @@
+.error-text {
+  color: red;
+  padding: 16px;
+  border: 1px solid red;
+  border-radius: 4px;
+  box-shadow: 4px 4px 8px rgba(red, 0.15);
+  transition: opacity .4s ease-in-out, visibility .4s ease-in-out;
+
+  &.hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  &.success-send {
+    border-color: @green;
+    color: @green;
+    box-shadow: 4px 4px 8px rgba(@green, 0.15);
+  }
+}

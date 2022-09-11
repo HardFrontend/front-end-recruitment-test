@@ -1,0 +1,68 @@
+/**
+ * Grid
+ */
+
+.container {
+  padding: 0 24px;
+  margin: 0 auto;
+
+  @media only screen and (min-width: @xl) {
+    max-width: @xl-container;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -8px;
+}
+
+.col {
+  padding: 0 8px;
+  width: 100%;
+}
+
+.col-md-6 {
+  @media only screen and (min-width: @md) {
+    width: 50%;
+  }
+}
+
+.col-lg-8 {
+  @media only screen and (min-width: @lg) {
+    width: 67.66667%;
+  }
+}
+.col-lg-4 {
+  @media only screen and (min-width: @lg) {
+    width: 32.33333%;
+  }
+}
+
+.form  {
+  &__inner {
+    @media only screen and (min-width: @lg) {
+     padding: 0 0 0 32px;
+    }
+
+    &--with-border {
+      border-bottom: 1px solid @black;
+      padding-bottom: 16px;
+      margin: 0 0 32px;
+
+      @media only screen and (min-width: @lg) {
+        border-bottom: none;
+        padding-bottom: 0;
+        margin: 0;
+      }
+    }
+  }
+
+  &__col-right {
+
+    @media only screen and (min-width: @lg) {
+      padding-top: 40px;
+    }
+  }
+}
+

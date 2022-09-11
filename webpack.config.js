@@ -1,5 +1,6 @@
 const { join } = require('path')
 const Encore = require('@symfony/webpack-encore')
+const less = require('less-loader')
 
 /*
 |--------------------------------------------------------------------------
@@ -46,6 +47,7 @@ Encore.setPublicPath('/assets')
 |
 */
 Encore.addEntry('app', './frontend/assets/js/app.js')
+Encore.addEntry('form-scripts', './frontend/assets/js/form-scripts.js')
 
 /*
 |--------------------------------------------------------------------------
@@ -159,6 +161,8 @@ Encore.configureDevServerOptions((options) => {
 // Encore.enableSassLoader()
 // Encore.enableLessLoader()
 // Encore.enableStylusLoader()
+Encore.enableLessLoader()
+Encore.addStyleEntry('form', './frontend/assets/css/form.less')
 
 /*
 |--------------------------------------------------------------------------
@@ -170,7 +174,7 @@ Encore.configureDevServerOptions((options) => {
 |
 */
 // Encore.enablePostCssLoader()
-// Encore.configureCssLoader(() => {})
+Encore.configureCssLoader(() => {})
 
 /*
 |--------------------------------------------------------------------------
